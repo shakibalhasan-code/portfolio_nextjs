@@ -14,7 +14,7 @@ import { ContactDialog } from "@/components/contact-dialog"
 export function Nav() {
   return (
     <div className="fixed top-0 left-0 right-0 z-50 border-b border-gray-800 bg-gray-950/80 backdrop-blur-sm">
-      <div className="container flex h-16 items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <span className="font-bold text-white">Shakib Al Hasan</span>
         </Link>

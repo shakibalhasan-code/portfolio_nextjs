@@ -1,5 +1,6 @@
+import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from 'next/font/google'
+import { Inter } from "next/font/google"
 import "./globals.css"
 import { structuredData } from "./structured-data"
 
@@ -7,7 +8,8 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Shakib Al Hasan - Software Developer | Flutter & Mobile Development",
-  description: "Portfolio of Shakib Al Hasan, a passionate software developer specializing in Flutter and mobile development. Explore my projects, skills, and experience.",
+  description:
+    "Portfolio of Shakib Al Hasan, a passionate software developer specializing in Flutter and mobile development. Explore my projects, skills, and experience.",
   keywords: ["Software Developer", "Flutter", "Mobile Development", "Shakib Al Hasan"],
   openGraph: {
     title: "Shakib Al Hasan - Software Developer",
@@ -25,12 +27,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth dark">
       <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <body className={`${inter.className} bg-gradient-to-br from-gray-900 to-gray-950`}>{children}</body>
+      <body className={`${inter.className} bg-gradient-to-br from-gray-900 to-gray-950 overflow-x-hidden`}>
+        {children}
+      </body>
     </html>
   )
 }

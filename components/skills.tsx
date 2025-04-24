@@ -50,8 +50,8 @@ export function Skills() {
   ]
 
   return (
-    <section id="skills" className="py-20">
-      <div className="container">
+    <section id="skills" className="py-16 scroll-mt-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12">
           <div>
             <h2 className="mb-12 text-3xl font-bold text-white">Skills</h2>

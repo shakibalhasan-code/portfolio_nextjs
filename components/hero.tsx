@@ -33,8 +33,8 @@ export function Hero() {
 
   return (
     <div className="relative">
-      <div className="container flex min-h-[85vh] flex-col items-center justify-center py-16 md:py-24">
-        <div className="flex flex-col items-center md:flex-row md:items-start md:justify-between gap-8 md:gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex min-h-[85vh] flex-col items-center justify-center py-16 md:py-24">
+        <div className="flex flex-col items-center md:flex-row md:items-start md:justify-between gap-8 md:gap-12 w-full">
           <div className="max-w-2xl text-center md:text-left">
             <div className="mb-4 inline-block rounded-lg bg-blue-500/10 px-3 py-1 text-sm text-blue-500">
               Software Engineer

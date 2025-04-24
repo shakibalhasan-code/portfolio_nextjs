@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <Background />
       <Nav />
-      <main className="px-4 sm:px-6 lg:px-8">
+      <main className="w-full mx-auto">
         <h1 className="sr-only">Shakib Al Hasan - Software Developer Portfolio</h1>
         <section id="about" aria-labelledby="about-heading">
           <h2 id="about-heading" className="sr-only">

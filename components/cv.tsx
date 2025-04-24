@@ -15,7 +15,7 @@ export function CV() {
 
   return (
     <section id="resume" className="py-12 scroll-mt-16">
-      <div className="container">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center mb-8">
           <h2 className="text-3xl font-bold text-white">My Resume</h2>
           <Button className="bg-blue-500 hover:bg-blue-600" onClick={handleDownloadCV}>
@@ -46,24 +46,24 @@ export function CV() {
                   <Phone className="h-5 w-5" />
                 </Link>
               </div>
-              <p className="text-blue-100">
-                Dhaka, BD |{" "}
+              <p className="text-blue-100 text-sm sm:text-base flex flex-wrap justify-center gap-x-2">
+                <span>Dhaka, BD</span> |
                 <Link href="tel:+8801857895107" className="hover:underline">
                   +8801857895107
                 </Link>{" "}
-                |{" "}
+                |
                 <Link href="mailto:work.shakib.ah@gmail.com" className="hover:underline">
                   work.shakib.ah@gmail.com
                 </Link>{" "}
-                |{" "}
+                |
                 <Link href="https://shakibalhasan.dev" className="hover:underline">
                   Portfolio
                 </Link>{" "}
-                |{" "}
+                |
                 <Link href="https://github.com/shakibalhasan-code" className="hover:underline">
                   Github
                 </Link>{" "}
-                |{" "}
+                |
                 <Link href="https://www.linkedin.com/in/shakibalhasan-code/" className="hover:underline">
                   Linkedin
                 </Link>
@@ -71,7 +71,7 @@ export function CV() {
             </div>
           </CardHeader>
 
-          <CardContent className="p-8">
+          <CardContent className="p-4 sm:p-8">
             <div className="grid gap-8 md:grid-cols-3">
               {/* Left Column */}
               <div className="space-y-8">
@@ -182,7 +182,7 @@ export function CV() {
                   </h3>
                   <div className="space-y-6">
                     <div>
-                      <div className="flex justify-between mb-1">
+                      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-1">
                         <h4 className="text-white font-semibold">
                           <Link href="#" className="hover:text-blue-400">
                             Join Venture AI
@@ -206,7 +206,7 @@ export function CV() {
                     </div>
 
                     <div>
-                      <div className="flex justify-between mb-1">
+                      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-1">
                         <h4 className="text-white font-semibold">
                           <Link href="https://codecanyon.net" target="_blank" className="hover:text-blue-400">
                             CodeCanyon
